@@ -62,7 +62,7 @@ public class ToolStore extends NormalLoc {
                    System.out.println("----------------------WEAPONS----------------------" );
                    Weapons[] weapons={new Pistol(), new Sword(), new Rifle()};
                 for (Weapons weapons1:weapons) {
-                   System.out.println("Weapon ID : " + weapons1.getId() + " Weapon Damage : " + weapons1.getDamage() + " Weapon Salary : " + weapons1.getSalary());
+                   System.out.println("Weapon Name : "+ weapons1.getWeaponName() +"Weapon ID : " + weapons1.getId() + " Weapon Damage : " + weapons1.getDamage() + " Weapon Salary : " + weapons1.getSalary());
                 }
                 int selectedWeapon = scan.nextInt();
                         weaponSelect(selectedWeapon);
@@ -70,7 +70,7 @@ public class ToolStore extends NormalLoc {
             case 2:System.out.println("----------------------ARMOR----------------------");
                 Armor[] armors={new LittleArmor(), new MiddleArmor(), new LargeArmor()};
                 for (Armor armors1:armors) {
-                    System.out.println("Armor ID : " + armors1.getId() + " Armor Defence: " + armors1.getDefence() + " Armor Salary : " + armors1.getSalary());
+                    System.out.println("Armor Name : "+ armors1.getArmorName() +"Armor ID : " + armors1.getId() + " Armor Defence: " + armors1.getDefence() + " Armor Salary : " + armors1.getSalary());
                 }
                 int selectedArmor = scan.nextInt();
                 armorSelect(selectedArmor);
